@@ -1,5 +1,5 @@
 {
-    "name": "Ffm/Coupondropdown",
+    "name": "ffm/coupondropdown",
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Changes the input field for coupons when creating orders into a dropdown",
