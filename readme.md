@@ -16,8 +16,7 @@ Any contribution is highly appreciated. The best way to contribute code is to op
 Developer
 ---------
 Sander Mangel
-[http://www.firstname-lastname.com](http://www.firstname-lastname.com)
-[@FirstNameLastName](https://twitter.com/FirstNameLastName)
+[@sandermangel](https://twitter.com/sandermangel)
 
 Licence
 -------
