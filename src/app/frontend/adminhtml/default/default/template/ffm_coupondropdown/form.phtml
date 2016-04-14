@@ -1,0 +1,42 @@
+<?php
+/**
+ * Ffm_Coupondropdown extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the OSL 3.0 License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/OSL-3.0
+ *
+ * @category       Ffm
+ * @package        Ffm_Coupondropdown
+ * @copyright      Copyright (c) 2015
+ * @license        OSL 3.0 http://opensource.org/licenses/OSL-3.0
+ */
+?>
+<div class="entry-edit box-left">
+    <div class="entry-edit-head">
+        <h4 class="icon-head"><?php echo Mage::helper('sales')->__('Apply Coupon Code') ?></h4>
+    </div>
+    <fieldset class="np">
+        <div class="content">
+            <p>
+                <select class="input-select" id="coupons:code" name="coupon_code" style="width:200px">
+                    <option value=""><?php echo $this->__('-- No coupon --');?></option>
+                    <?php foreach (Mage::helper('ffm_coupondropdown')->getCouponOptions() as $_option):?>
+                        <option value="<?php echo $_option->getData('code');?>"><?php echo $_option->getData('code');?></option>
+                    <?php endforeach; ?>
+                </select>
+                &nbsp;<?php echo $this->getButtonHtml(Mage::helper('sales')->__('Apply'), 'order.applyCoupon($F(\'coupons:code\'))') ?>
+            </p>
+            <?php if($this->getCouponCode()): ?>
+                <p><strong><?php echo $this->escapeHtml($this->getCouponCode()) ?></strong> [<a href="#" onclick="order.applyCoupon(''); return false;" title="<?php echo Mage::helper('sales')->__('Remove Coupon Code') ?>"><?php echo Mage::helper('sales')->__('Remove') ?></a>]</p>
+            <?php endif; ?>
+            <script type="text/javascript">
+                order.overlay('shipping-method-overlay', <?php if ($this->getQuote()->isVirtual()): ?>false<?php else: ?>true<?php endif; ?>);
+                order.overlay('address-shipping-overlay', <?php if ($this->getQuote()->isVirtual()): ?>false<?php else: ?>true<?php endif; ?>);
+            </script>
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffm_Coupondropdown extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the OSL 3.0 License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/OSL-3.0
+ *
+ * @category       Ffm
+ * @package        Ffm_Coupondropdown
+ * @copyright      Copyright (c) 2015
+ * @license        OSL 3.0 http://opensource.org/licenses/OSL-3.0
+ */
+ -->
+<layout>
+    <adminhtml_sales_order_create_coupon_dropdown>
+        <reference name="coupons">
+            <action method="setTemplate"><file>ffm_coupondropdown/form.phtml</file></action>
+        </reference>
+    </adminhtml_sales_order_create_coupon_dropdown>
+
+    <adminhtml_sales_order_create_index>
+        <update handle="adminhtml_sales_order_create_coupon_dropdown" />
+    </adminhtml_sales_order_create_index>
+
+    <adminhtml_sales_order_create_load_block_data>
+        <update handle="adminhtml_sales_order_create_coupon_dropdown" />
+    </adminhtml_sales_order_create_load_block_data>
+
+    <adminhtml_sales_order_create_load_block_items>
+        <update handle="adminhtml_sales_order_create_coupon_dropdown" />
+    </adminhtml_sales_order_create_load_block_items>
+</layout>

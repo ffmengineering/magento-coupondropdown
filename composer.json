@@ -1,0 +1,15 @@
+{
+    "name": "Ffm/Coupondropdown",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Changes the input field for coupons when creating orders into a dropdown",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Sander Mangel",
+            "email":"s.mangel@fitforme.nl"
+        }
+    ]
+}

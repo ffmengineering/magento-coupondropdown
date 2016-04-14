@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffm_Coupondropdown extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the OSL 3.0 License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/OSL-3.0
+ *
+ * @category       Ffm
+ * @package        Ffm_Coupondropdown
+ * @copyright      Copyright (c) 2015
+ * @license        OSL 3.0 http://opensource.org/licenses/OSL-3.0
+ */
+ -->
+<config>
+    <modules>
+        <Ffm_Coupondropdown>
+            <version>1.0.0</version>
+        </Ffm_Coupondropdown>
+    </modules>
+    <global>
+        <helpers>
+            <ffm_coupondropdown>
+                <class>Ffm_Coupondropdown_Helper</class>
+            </ffm_coupondropdown>
+        </helpers>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <ffm_coupondropdown>
+                    <file>ffm_coupondropdown.xml</file>
+                </ffm_coupondropdown>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

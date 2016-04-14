@@ -1,0 +1,4 @@
+src/app/code/community/Ffm/Coupondropdown     app/code/community/Ffm/Coupondropdown
+src/app/design/adminhtml/default/default/template/ffm_coupondropdown    app/design/adminhtml/default/default/template/ffm_coupondropdown
+src/app/design/adminhtml/default/default/layout/ffm_coupondropdown.xml    app/design/adminhtml/default/default/layout/ffm_coupondropdown.xml
+src/app/etc/modules/*    app/etc/modules/
